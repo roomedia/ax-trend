@@ -79,6 +79,22 @@ jobs:
               return;
             }
 
+            try {
+              await github.rest.issues.getLabel({ owner, repo, name: 'duplicated' });
+            } catch (error) {
+              if (error.status === 404) {
+                await github.rest.issues.createLabel({
+                  owner,
+                  repo,
+                  name: 'duplicated',
+                  color: 'd73a4a',
+                  description: 'Duplicate issue',
+                });
+              } else {
+                throw error;
+              }
+            }
+
             for (const group of duplicateGroups) {
               const ranked = [...group].sort((a, b) => {
                 const diff = scoreIssue(b) - scoreIssue(a);
@@ -93,6 +109,18 @@ jobs:
               for (const issue of closees) {
                 core.info(`Close #${issue.number}: ${issue.title}`);
                 if (!dryRun) {
+                  await github.rest.issues.addLabels({
+                    owner,
+                    repo,
+                    issue_number: issue.number,
+                    labels: ['duplicated'],
+                  });
+                  await github.rest.issues.createComment({
+                    owner,
+                    repo,
+                    issue_number: issue.number,
+                    body: `중복 이슈입니다. 원본 이슈: #${keep.number} (${keep.title})`,
+                  });
                   await github.rest.issues.update({
                     owner,
                     repo,
