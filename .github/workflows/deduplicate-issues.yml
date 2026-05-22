@@ -1,0 +1,106 @@
+name: Deduplicate issues
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only, do not close issues"
+        type: boolean
+        required: false
+        default: true
+  schedule:
+    - cron: "0 2 * * *"
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  dedupe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close duplicate issues by normalized title
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const dryRun = context.eventName === 'workflow_dispatch'
+              ? String(context.payload.inputs?.dry_run ?? 'true') === 'true'
+              : false;
+
+            function normalizeTitle(title) {
+              return title
+                .replace(/[^0-9A-Za-z가-힣]+/gu, '')
+                .toLowerCase();
+            }
+
+            function scoreIssue(issue) {
+              const body = issue.body || '';
+              const lines = body.split(/\r?\n/).map(s => s.trim());
+              const sections = ['요약', '상세 내용/레슨 런', '임팩트', '원문 링크'];
+              let score = 0;
+
+              const linkIndex = lines.findIndex(line => line === '원문 링크');
+              if (linkIndex >= 0) {
+                const link = (lines[linkIndex + 1] || '').trim();
+                if (link && /^https?:\/\//i.test(link)) score += 100;
+              }
+
+              for (const section of sections) {
+                if (lines.some(line => line === section)) score += 10;
+              }
+
+              score += Math.min(body.length / 50, 50);
+
+              return score;
+            }
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100,
+            });
+
+            const byTitle = new Map();
+            for (const issue of issues) {
+              if (issue.pull_request) continue;
+              const key = normalizeTitle(issue.title);
+              if (!key) continue;
+              if (!byTitle.has(key)) byTitle.set(key, []);
+              byTitle.get(key).push(issue);
+            }
+
+            const duplicateGroups = [...byTitle.values()].filter(group => group.length > 1);
+            if (duplicateGroups.length === 0) {
+              core.info('No duplicate title groups found.');
+              return;
+            }
+
+            for (const group of duplicateGroups) {
+              const ranked = [...group].sort((a, b) => {
+                const diff = scoreIssue(b) - scoreIssue(a);
+                if (diff !== 0) return diff;
+                return a.number - b.number;
+              });
+
+              const keep = ranked[0];
+              const closees = ranked.slice(1);
+
+              core.info(`Keep #${keep.number}: ${keep.title}`);
+              for (const issue of closees) {
+                core.info(`Close #${issue.number}: ${issue.title}`);
+                if (!dryRun) {
+                  await github.rest.issues.update({
+                    owner,
+                    repo,
+                    issue_number: issue.number,
+                    state: 'closed',
+                  });
+                }
+              }
+            }
+
+            core.info(dryRun ? 'Dry run complete.' : 'Duplicate cleanup complete.');
