@@ -12,7 +12,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "🏆 *AX Trend New Item*\n*${{ github.event.issue.title }}*\n${{ github.event.issue.html_url }}"
+              "text": "${{ github.event.issue.html_url }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
