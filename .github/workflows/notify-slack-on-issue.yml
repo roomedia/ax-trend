@@ -12,7 +12,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "<@U0B2YNTBB0B> ${{ github.event.issue.html_url }}"
+              "text": "<@U0B2YNTBB0B>\n*${{ github.event.issue.title }}*\n${{ github.event.issue.html_url }}\n\n${{ github.event.issue.body }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
