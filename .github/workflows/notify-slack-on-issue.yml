@@ -10,13 +10,12 @@ jobs:
       - name: Prepare Slack Message
         id: prep
         run: |
-          python3 -c "
-import os
-body = os.environ.get('BODY', '')
-summary = body.split('### 상세 내용')[0].strip() if '### 상세 내용' in body else body.strip()
-with open('summary.txt', 'w', encoding='utf-8') as f:
-    f.write(summary)
-"
+          BODY="${{ github.event.issue.body }}"
+          echo "$BODY" | sed -n '1,/### 상세 내용/p' | sed '$d' > summary.txt
+          if [ ! -s summary.txt ]; then
+            echo "$BODY" > summary.txt
+          fi
+          
           echo "SUMMARY<<EOF" >> $GITHUB_OUTPUT
           cat summary.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
