@@ -7,12 +7,28 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
+      - name: Prepare Slack Message
+        id: prep
+        run: |
+          python3 -c "
+import os
+body = os.environ.get('BODY', '')
+summary = body.split('### 상세 내용')[0].strip() if '### 상세 내용' in body else body.strip()
+with open('summary.txt', 'w', encoding='utf-8') as f:
+    f.write(summary)
+"
+          echo "SUMMARY<<EOF" >> $GITHUB_OUTPUT
+          cat summary.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        env:
+          BODY: ${{ github.event.issue.body }}
+
       - name: Send Slack Notification
         uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
-              "text": "<@U0B2YNTBB0B> ${{ github.event.issue.html_url }}"
+              "text": "<@U0B2YNTBB0B> *${{ github.event.issue.title }}*\n\n${{ steps.prep.outputs.summary }}\n\n${{ github.event.issue.html_url }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
