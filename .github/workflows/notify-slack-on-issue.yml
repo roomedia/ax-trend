@@ -11,7 +11,7 @@ jobs:
         id: prep
         run: |
           BODY="${{ github.event.issue.body }}"
-          echo "$BODY" | sed -n '1,/### 상세 내용/p' | sed '$d' > summary.txt
+          echo "$BODY" | sed -n '1,/## 상세 내용/p' | sed '$d' > summary.txt
           if [ ! -s summary.txt ]; then
             echo "$BODY" > summary.txt
           fi
