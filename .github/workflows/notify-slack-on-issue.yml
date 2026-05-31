@@ -17,6 +17,7 @@ jobs:
           fi
           
           echo "SUMMARY<<EOF" >> $GITHUB_OUTPUT
+          sed -i "s/\"/\\\"/g" summary.txt
           cat summary.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
         env:
