@@ -1,0 +1,50 @@
+name: Notify Slack on Issue
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare and Send Slack Notification
+        env:
+          BODY: ${{ github.event.issue.body }}
+          TITLE: ${{ github.event.issue.title }}
+          URL: ${{ github.event.issue.html_url }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python3 -c "
+          import json, os, urllib.request
+
+          body = os.environ.get('BODY', '')
+          title = os.environ.get('TITLE', '')
+          url = os.environ.get('URL', '')
+          webhook = os.environ.get('SLACK_WEBHOOK_URL', '')
+
+          # Extract 요약 section (## 요약 ~ ## 상세 내용)
+          summary = ''
+          in_summary = False
+          for line in body.split('\n'):
+              if line.startswith('## 요약'):
+                  in_summary = True
+                  continue
+              if line.startswith('## 상세 내용'):
+                  break
+              if in_summary and line.strip():
+                  summary += line + '\n'
+
+          summary = summary.strip() or body[:500]
+          message = f'<@U0B2YNTBB0B> *{title}*\n\n{summary}\n\n{url}'
+
+          # json.dumps for safe JSON payload (no shell escaping issues)
+          payload = json.dumps({'text': message}).encode('utf-8')
+
+          try:
+              req = urllib.request.Request(webhook, data=payload, headers={'Content-Type': 'application/json'})
+              with urllib.request.urlopen(req, timeout=15) as resp:
+                  print(f'Slack notification sent. Status: {resp.status}')
+          except Exception as e:
+              print(f'Failed to send: {e}')
+              exit(1)
+          "
