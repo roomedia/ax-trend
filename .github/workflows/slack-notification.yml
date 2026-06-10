@@ -22,11 +22,11 @@ jobs:
           url = os.environ.get('URL', '')
           webhook = os.environ.get('SLACK_WEBHOOK_URL', '')
 
-          # Extract 요약 section (## 요약 ~ ## 상세 내용)
+          # Extract 개요 section (## 개요 ~ ## 상세 내용)
           summary = ''
           in_summary = False
           for line in body.split('\n'):
-              if line.startswith('## 요약'):
+              if line.startswith('## 개요'):
                   in_summary = True
                   continue
               if line.startswith('## 상세 내용'):
