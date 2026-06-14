@@ -1,0 +1,55 @@
+name: unicode-fixer-ci
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+
+jobs:
+  fix-unicode:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Unicode Fixer
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get issue number from GitHub event context
+          ISSUE_NUMBER=$(curl -s https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${GITHUB_EVENT_ISSUE_NUMBER} | jq '.number')
+          # Fallback for different event types
+          if [ -z "$ISSUE_NUMBER" ]; then
+            ISSUE_NUMBER=$(echo '${GITHUB_EVENT_ISSUE_NUMBER}' | grep -oE '[0-9]+')
+          fi
+          
+          python3 -c "
+          import os, subprocess, json, re
+
+          def decode_unicode(text):
+              if not text: return text
+              try:
+                  return text.encode('utf-8').decode('unicode-escape')
+              except Exception:
+                  return re.sub(r'\u([0-9a-fA-F]{4})', lambda m: chr(int(m.group(1), 16)), text)
+
+          def process_issue(issue_number):
+              cmd = f'gh issue view {issue_number} --json title,body'
+              res = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+              if res.returncode != 0:
+                  return
+
+              data = json.loads(res.stdout)
+              title = data['title']
+              body = data['body']
+
+              if '\u' in title or '\u' in body:
+                  new_title = decode_unicode(title)
+                  new_body = decode_unicode(body)
+                  with open('tmp_body.txt', 'w', encoding='utf-8') as f:
+                      f.write(new_body)
+                  update_cmd = f'gh issue edit {issue_number} --title {json.dumps(new_title, ensure_ascii=False)} --body-file tmp_body.txt'
+                  subprocess.run(update_cmd, shell=True)
+
+          process_issue('${GITHUB_EVENT_ISSUE_NUMBER}')
+          "
