@@ -8,6 +8,8 @@ on:
         type: boolean
         required: false
         default: false
+  issues:
+    types: [opened]
   schedule:
     - cron: "0 2 * * *"
 
