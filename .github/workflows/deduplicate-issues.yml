@@ -134,3 +134,15 @@ jobs:
             }
 
             core.info(dryRun ? 'Dry run complete.' : 'Duplicate cleanup complete.');
+
+      - uses: actions/checkout@v4
+
+      - name: LLM semantic quality check (semantic duplicates + stale-as-current)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || secrets.LLM_MODEL || 'nvidia/nemotron-3-super-120b-a12b:free' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || '' }}
+          EVENT_NAME: ${{ github.event_name }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python3 -u .github/scripts/llm_quality_check.py
