@@ -266,9 +266,11 @@ def main():
 
     single = os.environ.get('ISSUE_NUMBER')
     event = os.environ.get('EVENT_NAME', '')
-    # Freshly opened issues: never auto-close immediately. Label + comment,
-    # let the next scheduled run actually close if still high-confidence.
-    auto_close = not (event == 'issues')
+    # close-on-open: close immediately when not in dry-run.
+    # - issues:opened  → real LLM eval, auto_close if conf high
+    # - schedule/manual → same
+    # - DRY_RUN=true   → label only, never close
+    auto_close = not DRY_RUN
 
     if single:
         try:
