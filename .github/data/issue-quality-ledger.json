@@ -1,6 +1,17 @@
 {
   "_comment": "SSOT for LLM issue quality decisions. Skip-if-recent-and-unchanged. Updated by .github/scripts/llm_quality_check.py.",
-  "schema_version": 1,
-  "last_run": null,
-  "decisions": {}
+  "decisions": {
+    "1113": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-21T23:48:34Z",
+      "duplicate_of": null,
+      "hash": "85ca60b623dde986",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a new PMB project for local persistent memory for AI coding agents, which is current and not a duplicate of any other open issue."
+    }
+  },
+  "last_run": "2026-06-21T23:53:09Z",
+  "schema_version": 1
 }
