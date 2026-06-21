@@ -15,7 +15,8 @@ on:
 
 permissions:
   issues: write
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   dedupe:
@@ -143,4 +144,22 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           LLM_MODEL: ${{ vars.LLM_MODEL || secrets.LLM_MODEL || 'nvidia/nemotron-3-super-120b-a12b:free' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '' }}
+          LEDGER_SKIP_DAYS: ${{ vars.LEDGER_SKIP_DAYS || '14' }}
         run: python3 -u .github/scripts/llm_quality_check.py
+
+      - name: Commit and push ledger (skip when dry-run or no changes)
+        if: env.DRY_RUN != 'true'
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run || '' }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .github/data/issue-quality-ledger.json
+          if git diff --cached --quiet; then
+            echo '[ledger] no changes to commit'
+          else
+            git commit -m "chore(ci): update issue quality ledger ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git pull --rebase origin main || git pull --rebase --autostash origin main
+            git push origin HEAD:main
+            echo '[ledger] pushed'
+          fi

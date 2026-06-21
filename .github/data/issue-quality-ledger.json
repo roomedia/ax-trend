@@ -1,0 +1,6 @@
+{
+  "_comment": "SSOT for LLM issue quality decisions. Skip-if-recent-and-unchanged. Updated by .github/scripts/llm_quality_check.py.",
+  "schema_version": 1,
+  "last_run": null,
+  "decisions": {}
+}
