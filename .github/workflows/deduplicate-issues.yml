@@ -142,7 +142,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || secrets.LLM_MODEL || 'nvidia/nemotron-3-super-120b-a12b:free' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || secrets.LLM_MODEL || 'meta-llama/llama-3.3-70b-instruct:free' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '' }}
           LEDGER_SKIP_DAYS: ${{ vars.LEDGER_SKIP_DAYS || '14' }}
         run: python3 -u .github/scripts/llm_quality_check.py

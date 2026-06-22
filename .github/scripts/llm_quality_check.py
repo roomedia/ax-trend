@@ -24,11 +24,12 @@ from datetime import datetime, timezone, timedelta
 REPO = os.environ.get('REPO', 'roomedia/ax-trend')
 GH_TOKEN = os.environ['GH_TOKEN']
 OPENROUTER_API_KEY = os.environ['OPENROUTER_API_KEY']
-LLM_MODEL = os.environ.get('LLM_MODEL') or 'nvidia/nemotron-3-super-120b-a12b:free'
+LLM_MODEL = os.environ.get('LLM_MODEL') or 'meta-llama/llama-3.3-70b-instruct:free'
 DRY_RUN = os.environ.get('DRY_RUN', '').lower() == 'true'
 MAX_BODY = 1500
-SLEEP = 3.0  # OpenRouter free tier ~20 RPM
+SLEEP = 4.0  # OpenRouter free tier ~15 RPM safety margin
 THRESHOLD = 0.9
+MAX_ATTEMPTS = 4  # was 3; +1 extra attempt for rate limit recovery
 
 LEDGER_PATH = os.environ.get('LEDGER_PATH', '.github/data/issue-quality-ledger.json')
 LEDGER_SKIP_DAYS = int(os.environ.get('LEDGER_SKIP_DAYS', '14'))
@@ -169,9 +170,10 @@ def list_open_issues():
 
 # ---------------- OpenRouter ----------------
 
-def classify_with_retry(title, body, max_attempts=3):
+def classify_with_retry(title, body, max_attempts=MAX_ATTEMPTS):
     """Call OpenRouter with retry + temperature=0 + JSON mode.
 
+    HTTP 429 honors Retry-After header. Other errors use exponential backoff (2,4,8).
     Returns parsed dict {category, confidence, reason, duplicate_of}.
     Raises last exception if all attempts fail.
     """
@@ -214,12 +216,27 @@ def classify_with_retry(title, body, max_attempts=3):
                 'reason': (parsed.get('reason') or '')[:300],
                 'duplicate_of': parsed['duplicate_of'] if isinstance(parsed.get('duplicate_of'), int) else None,
             }
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code == 429:
+                # Honor Retry-After header (in seconds) for rate limit recovery
+                ra = (e.headers or {}).get('Retry-After', '0') if hasattr(e, 'headers') else '0'
+                try:
+                    backoff = int(ra) if ra and ra.isdigit() else 0
+                except (ValueError, AttributeError):
+                    backoff = 0
+                if backoff <= 0:
+                    backoff = 2 ** attempt  # fallback: 2,4,8
+                else:
+                    backoff = min(backoff, 60)  # cap at 60s to avoid runaway
+            else:
+                backoff = 2 ** attempt  # 2,4,8 for non-429 errors
         except Exception as e:
             last_err = e
-            if attempt < max_attempts:
-                backoff = 2 ** attempt  # 2, 4 seconds
-                print(f'  [retry {attempt}/{max_attempts}] {type(e).__name__}: {str(e)[:80]} (sleep {backoff}s)')
-                time.sleep(backoff)
+            backoff = 2 ** attempt
+        if attempt < max_attempts:
+            print(f'  [retry {attempt}/{max_attempts}] {type(last_err).__name__}: {str(last_err)[:80]} (sleep {backoff}s)')
+            time.sleep(backoff)
     raise last_err
 
 
