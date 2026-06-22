@@ -1,6 +1,256 @@
 {
   "_comment": "SSOT for LLM issue quality decisions. Skip-if-recent-and-unchanged. Updated by .github/scripts/llm_quality_check.py.",
   "decisions": {
+    "1004": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:03:37Z",
+      "duplicate_of": null,
+      "hash": "411c903c1765d735",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released open-source project Lite-Harness for self-hosted agentic coding environments, which is current and not duplicate of any other open issue."
+    },
+    "1005": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T01:03:33Z",
+      "duplicate_of": null,
+      "hash": "85a661a2e8d97b67",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Google SRE blog post about agentic AI adoption for operational automation, which is current and not obviously a duplicate of any known open issue."
+    },
+    "1007": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:03:27Z",
+      "duplicate_of": null,
+      "hash": "df0d1c0da6ac57b4",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue shares a recent (May 2026) technical report comparing coding agent harnesses; it presents current information and is not a duplicate of any known open issue."
+    },
+    "1020": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:02:55Z",
+      "duplicate_of": null,
+      "hash": "00bbca189e11764d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue provides a current guide to building AI agents using up-to-date models (GPT-4o, Claude 3.5 Sonnet) and tools (Pinecone, Milvus, MCP) as of 2026, with no indication of outdated information or"
+    },
+    "1021": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T01:02:51Z",
+      "duplicate_of": null,
+      "hash": "f0197197c13ba905",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue shares a recent Hacker News post about a lightweight AI agent CLI implementation, presenting current information without referencing outdated tech."
+    },
+    "1031": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:02:26Z",
+      "duplicate_of": null,
+      "hash": "3ee8892e46b79e17",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent analysis of Claude Code's agent loop, presenting current technical details and insights without referencing outdated information or duplicating another open issue."
+    },
+    "1035": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:02:22Z",
+      "duplicate_of": null,
+      "hash": "bc28d22c1d7f2a6b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses recent 2025 Anthropic research on mechanistic interpretability, presenting current advancements without framing outdated information as current."
+    },
+    "1047": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T01:02:05Z",
+      "duplicate_of": null,
+      "hash": "556082eab4a2d325",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent technical experience shared via a Hacker News post about optimizing AI agent memory with graph databases, presenting current, non-duplicate content."
+    },
+    "1052": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T01:01:57Z",
+      "duplicate_of": null,
+      "hash": "d8a283b447d21f7f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent 2025 case study of AI integration at Ashby, presenting current information without being outdated or duplicating another open issue."
+    },
+    "1053": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:01:31Z",
+      "duplicate_of": null,
+      "hash": "9582514d56a7793b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent arXiv preprint (2026-06) about a novel deterministic memory framework for AI agents, presenting current research without duplication or outdated claims."
+    },
+    "1060": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T01:01:27Z",
+      "duplicate_of": null,
+      "hash": "0b0a3b72a7efe7f5",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a new open-source hybrid code review tool from Alibaba, not duplicate or outdated."
+    },
+    "1061": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:01:23Z",
+      "duplicate_of": null,
+      "hash": "1e7f80f30f49b475",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent ICML 2026 paper on QKV projection sharing, presenting novel findings and not duplicating any existing issue."
+    },
+    "1062": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:00:49Z",
+      "duplicate_of": null,
+      "hash": "ba659cf4d00eb5ff",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue announces a recent research paper on IMAD (2026) and does not duplicate any other open issue."
+    },
+    "1068": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T01:00:45Z",
+      "duplicate_of": null,
+      "hash": "b0b2ab56cea5b55b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue describes a new Android app project using Hermes Gateway API, not duplicate or outdated information."
+    },
+    "1083": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T01:00:37Z",
+      "duplicate_of": null,
+      "hash": "6ed138f3001040cf",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces Anthropic's recent public beta release of managed agents and memory features for Claude, which is current and not duplicate of any other open issue."
+    },
+    "1092": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.85,
+      "decided_at": "2026-06-22T01:00:34Z",
+      "duplicate_of": null,
+      "hash": "5c47a01bc02fa187",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent blog post about teaching AI agents Kent Beck's Canon TDD via skill files, presenting it as a current development in agent skill patterns."
+    },
+    "1096": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T01:00:26Z",
+      "duplicate_of": null,
+      "hash": "b374dafa1043823d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent theoretical paper on transformer succinctness with no indication of duplication or outdated claims."
+    },
+    "1098": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:59:56Z",
+      "duplicate_of": null,
+      "hash": "e272445409b3d9b7",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a new 2026 benchmark for AI agent tool use, browsing, and computer use, which is current and not a duplicate of any known open issue."
+    },
+    "1099": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:59:54Z",
+      "duplicate_of": null,
+      "hash": "b50ec341eef7ba61",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent arXiv paper from June 2025 proposing a unified AI software engineering agent, which is current and not duplicate or stale."
+    },
+    "1104": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:59:36Z",
+      "duplicate_of": null,
+      "hash": "e08e387bb1c39715",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue discusses a recent analysis of MCP server design impact on agent token consumption, referencing a current Hacker News post; no evidence of duplication or outdated framing."
+    },
+    "1106": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:59:34Z",
+      "duplicate_of": null,
+      "hash": "8ef424cf9a30d548",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a recent survey paper on agent harness engineering with a 2026+ timeline, presenting novel ETCLOVG framework and evolution stages, which is current and not duplicate."
+    },
+    "1108": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.85,
+      "decided_at": "2026-06-22T00:59:31Z",
+      "duplicate_of": null,
+      "hash": "8b8a726b6e704c4d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces GNAP, a git-native agent protocol, as a current topic without evidence of being a duplicate or presenting outdated information as latest."
+    },
+    "1109": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:59:24Z",
+      "duplicate_of": null,
+      "hash": "72510e059b88202c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces Playwright MCP as a current topic for AI agents, with no indication it duplicates another open issue or presents outdated information as current."
+    },
+    "1110": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:58:50Z",
+      "duplicate_of": null,
+      "hash": "79fd5e54276dac34",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Google Cloud blog announcement about official MCP support for Google services, which appears to be a current and unique update not matching any other open issue."
+    },
+    "1112": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:58:24Z",
+      "duplicate_of": null,
+      "hash": "8389e842b2c13982",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a new Git-aware memory system for coding agents with no indication of being a duplicate or presenting outdated information as current."
+    },
     "1113": {
       "action_taken": null,
       "classification": "ok",
@@ -10,8 +260,2108 @@
       "hash": "85ca60b623dde986",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
       "reason": "The issue announces a new PMB project for local persistent memory for AI coding agents, which is current and not a duplicate of any other open issue."
+    },
+    "1114": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:58:21Z",
+      "duplicate_of": null,
+      "hash": "a1edbdb2fdebbfcf",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent OpenAI harness engineering article about Codex and agent loops, presenting current information without indicating outdated content."
+    },
+    "1119": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:58:19Z",
+      "duplicate_of": null,
+      "hash": "912af207c18fa80f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue summarizes a recent Microsoft developer blog post about AI coding agents' interaction with tech stacks, presenting current analysis as of 2024-2025, not outdated information."
+    },
+    "1120": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:58:17Z",
+      "duplicate_of": null,
+      "hash": "74cd258708095cbb",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a new Universal Memory Protocol proposal, which is not a duplicate of any existing issue and does not present outdated information as current."
+    },
+    "1122": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:58:13Z",
+      "duplicate_of": null,
+      "hash": "819aea4d0aa805ec",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent, specific workflow change at Jane Street using Claude Code, with no indication of duplication or outdated information."
+    },
+    "1123": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:58:11Z",
+      "duplicate_of": null,
+      "hash": "e595ba8f027f1abc",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue describes a recent OpenAI Lockdown Mode announcement from June 6, 2026, which is current and not obviously duplicate of any known open issue."
+    },
+    "1124": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:58:05Z",
+      "duplicate_of": null,
+      "hash": "ab47149fc37c848e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent MCP-based sub-agent orchestration server shared via HN, with no indication of duplication or outdated information."
+    },
+    "1129": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:57:51Z",
+      "duplicate_of": null,
+      "hash": "73dcfce3e847f993",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a current debate about MCP vs CLI for AI agents, linking to a recent article; it presents a genuine, non-duplicate perspective."
+    },
+    "1130": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:57:48Z",
+      "duplicate_of": null,
+      "hash": "f317f2bb27e55dcf",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue shares a current Hacker News Ask HN discussion about AI dev tech stacks and workflows, providing timely community insights without presenting outdated information as current."
+    },
+    "1136": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:57:05Z",
+      "duplicate_of": null,
+      "hash": "112dd9dc4bc4ed8b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Asana Dash release on 2026-06-04, which is current and not duplicated in the provided context."
+    },
+    "1141": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:57:01Z",
+      "duplicate_of": null,
+      "hash": "f4a3efe6bf34c1bd",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a recent learning framework Lathe that uses LLMs for active learning and knowledge graph tracking, presenting it as a novel AX trend with no indication of duplication or outdated "
+    },
+    "1143": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:56:45Z",
+      "duplicate_of": null,
+      "hash": "1cc037622c6613be",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent arXiv paper from February 2026 proposing a novel sub-agent generation framework, which is current and not duplicate of any known open issue."
+    },
+    "1144": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:56:32Z",
+      "duplicate_of": null,
+      "hash": "b2d7720f0871b039",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent arXiv preprint from June 2026 proposing a novel SLM-based agent orchestration gateway for virtual worlds, which is current and not a duplicate of any known open issue."
+    },
+    "1145": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:56:20Z",
+      "duplicate_of": null,
+      "hash": "103c70e159eff356",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent research paper (arXiv 2606.04896v2) proposing a novel verification protocol for multi-agent memory injection, presenting current technical content without being outdated o"
+    },
+    "1146": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:56:17Z",
+      "duplicate_of": null,
+      "hash": "3a99c8b93cffebbd",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue summarizes a recent arXiv preprint (April 2026) proposing a novel declarative knowledge orchestration framework for enterprise agentic AI, presenting current research without outdated claims"
+    },
+    "1154": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:56:15Z",
+      "duplicate_of": null,
+      "hash": "6331bba9c22e9ceb",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a genuine 2026 Q2 product update from Nintex about agentic orchestration, with no indication of duplication or outdated information."
+    },
+    "1157": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:56:12Z",
+      "duplicate_of": null,
+      "hash": "969fb92ab11394ce",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a current 2026 review of AI coding agents and does not duplicate any other known issue."
+    },
+    "1158": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:56:09Z",
+      "duplicate_of": null,
+      "hash": "a782645a69356949",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports recent AI agent news from June 5, 2026, describing current developments without presenting outdated information as current."
+    },
+    "1159": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:56:03Z",
+      "duplicate_of": null,
+      "hash": "ba6a89435a373909",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports current June 2026 developments about AI agents becoming essential business infrastructure, with no indication of duplication or outdated information."
+    },
+    "1166": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:56:01Z",
+      "duplicate_of": null,
+      "hash": "34ddeab8d3763bfe",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a novel MCP-based web map registry for AI agents, presenting current information and not matching any known existing issue."
+    },
+    "1208": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:55:59Z",
+      "duplicate_of": null,
+      "hash": "48e81517b60aab1b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent LangChain blog post about harness engineering improving coding agent performance, with no indication of duplication or outdated information."
+    },
+    "1215": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:55:46Z",
+      "duplicate_of": null,
+      "hash": "817e4c058667c526",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue proposes a current lightweight agent design approach using modern LLM capabilities, referencing a recent blog post, and does not describe outdated information or duplicate another issue."
+    },
+    "1216": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:55:44Z",
+      "duplicate_of": null,
+      "hash": "2ff93b8add561dbe",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent WSJ article from June 11, 2026 about OpenAI considering price cuts in response to Anthropic, which is current and not duplicate of any known issue."
+    },
+    "1218": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:55:41Z",
+      "duplicate_of": null,
+      "hash": "9b8913bc8918849f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released graph database HelixDB that uses object storage, presenting current information without referencing outdated tech."
+    },
+    "1219": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:55:37Z",
+      "duplicate_of": null,
+      "hash": "6c7ec054a0ee444e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses current strategies for achieving flow state while using AI coding tools, reflecting ongoing community discussion without referencing outdated information."
+    },
+    "1220": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:55:34Z",
+      "duplicate_of": null,
+      "hash": "40f8f92676ee90d7",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue references a JetBrains blog post dated June 2026, which is current and provides up-to-date analysis of agentic frameworks; no indication of duplication or outdated information."
+    },
+    "1225": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:55:09Z",
+      "duplicate_of": null,
+      "hash": "89a2adcbb03f73f4",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a new open-source flight recorder tool for AI coding agents, describing current features and relevance."
+    },
+    "1228": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:55:06Z",
+      "duplicate_of": null,
+      "hash": "e577f2e1916977fe",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a genuine June 2026 Cursor release with Auto-review governance, current and not duplicate."
+    },
+    "1231": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:55:00Z",
+      "duplicate_of": null,
+      "hash": "79729a925d42f6c6",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent arXiv paper (2026-06) on token-level stochastic variability in AI agent outputs, presenting current research and recommendations, not outdated or duplicate content."
+    },
+    "1232": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:54:58Z",
+      "duplicate_of": null,
+      "hash": "55567070bb6a1275",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent arXiv preprint (2026-06) proposing a forward-looking roadmap for AI agents in software engineering, which is current and not duplicate or stale."
+    },
+    "1235": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:54:55Z",
+      "duplicate_of": null,
+      "hash": "4d3ef6b2d7666ad7",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a current trend in agentic commerce with recent references and no indication of duplication or outdated information."
+    },
+    "1247": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:54:48Z",
+      "duplicate_of": null,
+      "hash": "dca8f552aa4b956f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces AWS's recent open-source release of Simple Strands Agent (SSA) for AI coding, describing current features and AWS ecosystem integration; no indication of duplication or outdated info."
+    },
+    "1255": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:54:43Z",
+      "duplicate_of": null,
+      "hash": "88ede9d7e2bcb282",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent 2026 evaluation framework for LLM agents focusing on tool calling and reliability, referencing a new Confident AI guide; no indication of duplication or outdated framing."
+    },
+    "1265": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:54:40Z",
+      "duplicate_of": null,
+      "hash": "f8116d009c51aeb2",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses current revenue models in the agentic AI market with a recent reference and does not appear to duplicate any other open issue."
+    },
+    "1266": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.85,
+      "decided_at": "2026-06-22T00:54:38Z",
+      "duplicate_of": null,
+      "hash": "7c5e3c7da1113f40",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses current trends in cloud infrastructure for AI agents, referencing recent concepts and not presenting outdated information as current."
+    },
+    "1275": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.85,
+      "decided_at": "2026-06-22T00:54:32Z",
+      "duplicate_of": null,
+      "hash": "8b3df164332d5e2d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces Apache Burr as a new framework for deterministic AI agent workflows, with no indication of duplication or outdated information."
+    },
+    "1279": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:54:29Z",
+      "duplicate_of": null,
+      "hash": "66e92dc88807774b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a recent governance and monitoring tool for Claude Code agents, presenting current information without referencing outdated material."
+    },
+    "1284": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:54:26Z",
+      "duplicate_of": null,
+      "hash": "a58d4d80ee9152b2",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a newly released local firewall and cost control tool for AI coding agents, with no indication of being outdated or duplicate."
+    },
+    "1293": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:54:21Z",
+      "duplicate_of": null,
+      "hash": "2ef24c9575c9325a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces BitBoard, a new agent-focused analytics workspace launched in YC P25, presenting current information without referencing outdated content."
+    },
+    "1305": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:54:20Z",
+      "duplicate_of": null,
+      "hash": "e482a4802687beeb",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released tool (Guardian Runtime) with current details and links, not duplicating any existing issue."
+    },
+    "1306": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:54:13Z",
+      "duplicate_of": null,
+      "hash": "3a0d0eb754eea949",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a new framework AgentNexus with a GitHub link; no indication of duplication or outdated information."
+    },
+    "1309": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:53:53Z",
+      "duplicate_of": null,
+      "hash": "1c03cb8a45014832",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent open-source project Mimirs that provides MCP-based persistent local memory for AI coding agents, presenting current information without duplication or outdated framing."
+    },
+    "1312": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:53:50Z",
+      "duplicate_of": null,
+      "hash": "03796f303eb3a27d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a newly released AI agent framework OpenLumara focused on local model optimization and token efficiency, with a recent Reddit reference and no indication of duplication or outdated informati"
+    },
+    "1314": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:53:44Z",
+      "duplicate_of": null,
+      "hash": "fe284d9eaef1d473",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue summarizes a recent Red Hat blog post about open inference stacks for agentic AI, presenting current information and not duplicating any other known issue."
+    },
+    "1315": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:53:42Z",
+      "duplicate_of": null,
+      "hash": "740abea3a61de7e3",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Endava and OpenAI case study about AI agents in software delivery, with no indication of being outdated or duplicate."
+    },
+    "1318": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:53:39Z",
+      "duplicate_of": null,
+      "hash": "9d781ccd46be087f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue introduces SentinelMCP, a new open-source firewall for MCP-based AI agents, describing its features and relevance; no indication of duplication or outdated information."
+    },
+    "1319": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:53:24Z",
+      "duplicate_of": null,
+      "hash": "cc45bdc9a7db6d8b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a current concept of loop engineering for AI agents based on a recent blog post, presenting it as a new trend without referencing outdated information."
+    },
+    "1320": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:53:21Z",
+      "duplicate_of": null,
+      "hash": "9c8bbdf029722fd4",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue proposes a novel harness engineering concept for coding agents, referencing a Martin Fowler article; it is not duplicate of any known open issue and does not present outdated information as "
+    },
+    "1321": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:53:16Z",
+      "duplicate_of": null,
+      "hash": "29a6f28bfd2e8974",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a recent internal development agent workflow at AnyFrame, presenting current practices without outdated claims."
+    },
+    "1324": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:53:09Z",
+      "duplicate_of": null,
+      "hash": "f92be996e3ed21c6",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a novel causal isolation sandbox for AI agents with specific technical details and no indication of being outdated or duplicate."
+    },
+    "1325": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:53:07Z",
+      "duplicate_of": null,
+      "hash": "0fcf3af84f57acf8",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue describes a recent 2026 BPF Summit talk and proposes current/future directions for BPF development with LLM agents, not outdated info."
+    },
+    "1326": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:53:04Z",
+      "duplicate_of": null,
+      "hash": "860eafcb5c487579",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent 2026 PyCon talk and blog post about type checking in agentic workflows, presenting current research without framing outdated information as current."
+    },
+    "1327": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:53:01Z",
+      "duplicate_of": null,
+      "hash": "8ab2c696fccb7d5c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports recent AWS Graviton5 optimizations for agentic AI based on a June 11, 2026 article, presenting current information without duplication or outdated framing."
+    },
+    "1334": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:52:57Z",
+      "duplicate_of": null,
+      "hash": "7626c6228f54af99",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a new work model AccInt for AI coding agents, which is a current proposal and not a duplicate or outdated information."
+    },
+    "1340": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:52:35Z",
+      "duplicate_of": null,
+      "hash": "253365c6d10e96d6",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a recent offline MCP memory server for AI coding agents, presenting current information without referencing outdated material."
+    },
+    "1341": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:52:33Z",
+      "duplicate_of": null,
+      "hash": "5b6edc62a9dec60c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a recent implementation of a 24/7 AI coding agent system using local models and hybrid approach, referencing a current Hacker News post; no indication of outdated information or duplication."
+    },
+    "1342": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:52:19Z",
+      "duplicate_of": null,
+      "hash": "5fcb4c80ec09c3e8",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a current analysis of agentic SDLC orchestration vs synchronization models, referencing a recent blog post, and presents it as a relevant trend for AI-native engineering teams."
+    },
+    "1348": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:52:17Z",
+      "duplicate_of": null,
+      "hash": "5193d9e6c56e05a0",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue shares a recent Medium guide on implementing long-task planning for AI agents from scratch; no evidence of duplication with other open issues."
+    },
+    "1349": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:52:15Z",
+      "duplicate_of": null,
+      "hash": "b529346d6bbe3db6",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces Intuned's June 2026 launch of deterministic browser automation with self-healing AI agent, which is current and not duplicate of any known prior issue."
+    },
+    "1360": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:52:03Z",
+      "duplicate_of": null,
+      "hash": "6d81fe5638ab15dd",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a recent vendor-neutral Open Knowledge Format released by Google on 2026-06-13, which is current and not duplicate of any known issue."
+    },
+    "1362": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:52:01Z",
+      "duplicate_of": null,
+      "hash": "48d8481ec42cb4eb",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of a new SkyPilot Sandboxes feature for running agent code on self-hosted Kubernetes, appears to be a current release."
+    },
+    "1364": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:51:37Z",
+      "duplicate_of": null,
+      "hash": "99e23ed7d01def4f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent guide on reducing token consumption for agentic coding, presenting current optimization techniques without referencing outdated information or duplicating another open iss"
+    },
+    "1365": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:51:35Z",
+      "duplicate_of": null,
+      "hash": "9e2b383a2dceae3f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released open-source security runtime (QuantmLayer) for coding agents, describing its features and relevance; it is current and not a duplicate of any other known issue."
+    },
+    "1366": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:51:32Z",
+      "duplicate_of": null,
+      "hash": "1d50d54501ac3e4e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces the recent release of ClawMoat runtime isolation tool in response to the Fable 5 jailbreak incident, presenting current information without duplication or outdated claims."
+    },
+    "1367": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:51:29Z",
+      "duplicate_of": null,
+      "hash": "1a08bdea271dfa96",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Linear blog post from June 10, 2026 about their new Diffs PR review feature and AI-era code review workflow, which is current and not duplicated."
+    },
+    "1372": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:51:09Z",
+      "duplicate_of": null,
+      "hash": "33715fcb875d6607",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue shares a recent arXiv paper (May 2026) about grep vs vector retrieval in agent harnesses; no evidence of duplication or outdated framing."
+    },
+    "1378": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:51:01Z",
+      "duplicate_of": null,
+      "hash": "bb1c37c474efd95e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent 2026-05-06 blog post about LLM context window attention decay and agent workflow patterns, presenting current insights rather than outdated information."
+    },
+    "1379": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:50:27Z",
+      "duplicate_of": null,
+      "hash": "c9d5eb70349c2be5",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of a newly released LLM-based security CLI tool with current performance claims and pricing, no indication of duplication or outdated information."
+    },
+    "1380": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:50:23Z",
+      "duplicate_of": null,
+      "hash": "4c751b0a464f4b91",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of Spanly's MCP observability platform launch, appears current and not matching any known existing issue."
+    },
+    "1381": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:50:20Z",
+      "duplicate_of": null,
+      "hash": "0efb4f624a0bd0b0",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a current beta launch of AI Boost's expertise layer for LLM agents, with no indication of duplication or outdated information."
+    },
+    "1384": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:50:00Z",
+      "duplicate_of": null,
+      "hash": "adf229c0c406b7b9",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent Endor Labs benchmark of Claude Fable 5 with current results, not outdated or duplicate of another open issue."
+    },
+    "1385": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:49:57Z",
+      "duplicate_of": null,
+      "hash": "e1b74a98abdc380f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Reports a recent US government export control directive affecting Fable 5 and Mythos 5 access, with Anthropic's official statement; no indication of duplication or outdated framing."
+    },
+    "1398": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:49:54Z",
+      "duplicate_of": null,
+      "hash": "5c05f4f05980ae5e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent 150-line AI agent CLI release by go-micro, presenting current information without framing outdated content as latest."
+    },
+    "1422": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:49:51Z",
+      "duplicate_of": null,
+      "hash": "ac4a7e70cd98546b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue shares a recent Stratechery analysis from 2026 about Anthropic's safety strategy, presenting current insights without duplication or outdated framing."
+    },
+    "1423": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:49:40Z",
+      "duplicate_of": null,
+      "hash": "3154f5f8c46b21f2",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a current homelab AI development platform using OpenCode and GitOps, with a recent blog post date of 2026-06-14, presenting novel, non-duplicate content."
+    },
+    "1427": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:49:37Z",
+      "duplicate_of": null,
+      "hash": "99f352239d6fcc93",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent OpenAI case study from June 14, 2026 about Codex used in black hole simulation, which is current and not duplicate of any known open issue."
+    },
+    "1430": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:49:25Z",
+      "duplicate_of": null,
+      "hash": "0259d62f8ef6cf8c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released tool (Spotlight) on 2026-06-15, which is current and not duplicate of any known prior issue."
+    },
+    "1431": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:49:23Z",
+      "duplicate_of": null,
+      "hash": "ca84a557bdcf3ae7",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of Fata's spaced-repetition tool for developer skill maintenance, released June 12 2026, with no indication of prior coverage."
+    },
+    "1432": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:49:19Z",
+      "duplicate_of": null,
+      "hash": "43beb2b43d5533c3",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent model-agnostic agent harness for local GGUF models, with no indication of being a duplicate or presenting outdated information as current."
+    },
+    "1433": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:49:17Z",
+      "duplicate_of": null,
+      "hash": "b047a64af62bd94f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a newly introduced binary protocol (Lumen) for MCP with current performance and security claims, not outdated or duplicate of any known issue."
+    },
+    "1434": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:49:15Z",
+      "duplicate_of": null,
+      "hash": "592d1f4090edb58a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces Loopy, a recent meta-harness for coding agents, with no indication of duplication or outdated information."
+    },
+    "1437": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:49:13Z",
+      "duplicate_of": null,
+      "hash": "40791800d0dd750b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a novel Agent Skill for routing MCP tools to reduce token cost, with no indication of being a duplicate or outdated information."
+    },
+    "1438": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:49:09Z",
+      "duplicate_of": null,
+      "hash": "872513352ef7938a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent, unofficial Visual Studio 2026 extension integrating Claude Code's diff UI, representing a current development."
+    },
+    "1439": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:48:56Z",
+      "duplicate_of": null,
+      "hash": "7e781e51f7707ce2",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released prompt injection catalog from archestra.ai, which appears to be current and not matching any existing open issue."
+    },
+    "1440": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:48:53Z",
+      "duplicate_of": null,
+      "hash": "6aef4d786a956f63",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue provides a current, comprehensive overview of LLM agent memory systems and pain points, with no indication of outdated information or duplication."
+    },
+    "1443": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:48:46Z",
+      "duplicate_of": null,
+      "hash": "9f652151a9d423b7",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent Stack Overflow announcement from June 12, 2026 about its transition to an AI agent collaboration platform, which is current and not duplicate of any other known issue."
+    },
+    "1445": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:48:38Z",
+      "duplicate_of": null,
+      "hash": "04573d0d0b815784",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a newly disclosed Agentjacking RCE attack vector from Legit Security on 2026-06-12, which is current and not obviously duplicate of any other open issue."
+    },
+    "1447": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:48:35Z",
+      "duplicate_of": null,
+      "hash": "9b07d875d26ff252",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a historical/analytical discussion linking CCA to JEPA, not outdated information presented as current, and no duplicate is evident."
+    },
+    "1468": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:48:31Z",
+      "duplicate_of": null,
+      "hash": "b80ac0ffe4bfe262",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue announces a newly released alpha version dual-provider coding agent using VSA memory, describing current features and benchmarks."
+    },
+    "1474": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:48:25Z",
+      "duplicate_of": null,
+      "hash": "f8e66f963512a476",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a new AI-native API framework AgentBack, describing its features and usage; it is not a duplicate of any known issue and presents current information."
+    },
+    "1475": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:48:23Z",
+      "duplicate_of": null,
+      "hash": "242e0c5550531654",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent report on AI-assisted software delivery risks, which is not a duplicate of any known issue and does not contain outdated information."
+    },
+    "1476": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:47:48Z",
+      "duplicate_of": null,
+      "hash": "7b98af9d8dddcffb",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released SAMF framework with recent details and a GitHub link, indicating current information."
+    },
+    "1477": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:47:45Z",
+      "duplicate_of": null,
+      "hash": "bd435c7d4f8f4b92",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces the open-source release of Agent Workspace Fabric (AWF), a new multi-agent coding infrastructure, with no indication of prior coverage."
+    },
+    "1478": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:47:43Z",
+      "duplicate_of": null,
+      "hash": "33f6bb80bfa95a75",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a new self-hosted MCP workflow runtime release from MihaiBuilds, which is current and not a duplicate of any known issue."
+    },
+    "1479": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:47:38Z",
+      "duplicate_of": null,
+      "hash": "715fe0b73110ae8f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a recent security-first framework for AI coding agents (Batta) with no indication of being outdated or duplicate."
+    },
+    "1480": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:47:36Z",
+      "duplicate_of": null,
+      "hash": "f8d1558a6ac41a61",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of Kster.ai's structured product context service appears to be a current, specific product launch not matching any other open issue."
+    },
+    "1481": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:47:23Z",
+      "duplicate_of": null,
+      "hash": "25c224cca7ee4c46",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a newly released tool (git-lrc) for local, commit-hook AI code review, describing its features and relevance; it is not a duplicate nor presenting outdated information as current."
+    },
+    "1486": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:47:19Z",
+      "duplicate_of": null,
+      "hash": "8b586a18d1cc4761",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent essay published on 2026-06-15 about a novel octopus architecture for AI agents, which is current and not duplicate of any known open issue."
+    },
+    "1491": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:47:09Z",
+      "duplicate_of": null,
+      "hash": "4c53c816f73f3353",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Reports recent practical deployment of DeepSeek V4 Pro with hash-anchored editing technique, presenting current cost/performance analysis."
+    },
+    "1492": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:47:07Z",
+      "duplicate_of": null,
+      "hash": "fee894a84f2c6d14",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces the genuine June 16, 2024 release of Wolfram Language & Mathematica 15.0 with new AI Assistant and Agent Tools, which is current and not duplicate of any other open issue."
+    },
+    "1495": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:47:03Z",
+      "duplicate_of": null,
+      "hash": "a059ad14c8846dd4",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent launch of Ito, an Agentic QA platform, with no indication of duplication or outdated information."
+    },
+    "1501": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:46:57Z",
+      "duplicate_of": null,
+      "hash": "34b4f8c2ed14034c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a newly released open-source agent skill for offloading long-running coding agent tasks to remote machines, which is a current and genuine topic."
+    },
+    "1506": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:46:27Z",
+      "duplicate_of": null,
+      "hash": "4ea3c5d4c801a9cb",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of Encord Merlin beta release is a current, specific news item with no indication of being a duplicate or outdated information."
+    },
+    "1507": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:46:24Z",
+      "duplicate_of": null,
+      "hash": "1bbe962e896ddb51",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a new open-source project for parallel AI coding agents, presenting current information without referencing outdated content or duplicating another issue."
+    },
+    "1508": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:46:20Z",
+      "duplicate_of": null,
+      "hash": "71ad386c15011b96",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a new Go-based MCP server for SQL databases with Turkish ERP support and PII masking; no indication of outdated information or duplication."
+    },
+    "1509": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:46:17Z",
+      "duplicate_of": null,
+      "hash": "5ef3467c053a9ebb",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Introduces a new AI subscription usage tracking tool (AgentPace) with no indication of being a duplicate or outdated information."
+    },
+    "1510": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:46:10Z",
+      "duplicate_of": null,
+      "hash": "ad8d0b03f1502c1e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a new open-source framework (SAMF) for LLM output validation, which is a current and original contribution."
+    },
+    "1511": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:46:06Z",
+      "duplicate_of": null,
+      "hash": "29485ee925ea8b62",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent announcement of Cursor's Origin git forge with current community reaction; no indication it is outdated or duplicates another open issue."
+    },
+    "1512": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:45:30Z",
+      "duplicate_of": null,
+      "hash": "1422b2d02543857a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a newly released open-source tool for tamper-evident audit logging of AI coding agent activity, with no indication of prior coverage."
+    },
+    "1513": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:45:18Z",
+      "duplicate_of": null,
+      "hash": "6668e7683ab09809",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a newly disclosed attack (Agentjacking) targeting AI coding agents via Sentry DSN, reported June 3, 2026, with specific details and no indication of duplication or outdated info."
+    },
+    "1514": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.94,
+      "decided_at": "2026-06-22T00:45:16Z",
+      "duplicate_of": null,
+      "hash": "efcad7d24cc008dc",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a new third‑party patch for Claude Code that enables parallel agent execution, describing a recent release with no indication of prior coverage."
+    },
+    "1516": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:45:13Z",
+      "duplicate_of": null,
+      "hash": "56d2d50305f5af6c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Fedora Magazine guide from June 15, 2026 on microVM sandboxing for AI coding agents, presenting current information and not duplicating any other open issue."
+    },
+    "1517": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:45:09Z",
+      "duplicate_of": null,
+      "hash": "20fd043a77fd3c1a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a new open-source tool (Devloop) for spec-driven code/review loops with no indication of duplication or outdated information."
+    },
+    "1518": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:45:02Z",
+      "duplicate_of": null,
+      "hash": "b61855fc4b11de5d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of Anthropic's Claude Code Security research preview is a recent, specific product release with no indication of duplication or outdated framing."
+    },
+    "1519": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:44:54Z",
+      "duplicate_of": null,
+      "hash": "25afb6ae68062688",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent (May 14, 2026) official release by Anthropic of a founder's playbook for AI-native startups, which is current and specific news."
+    },
+    "1520": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:44:52Z",
+      "duplicate_of": null,
+      "hash": "4e6d2008d43b0af6",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue announces a recent open-source release of V-COS governance layer for AI coding agents, describing current features and metrics."
+    },
+    "1521": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:44:45Z",
+      "duplicate_of": null,
+      "hash": "b172af8b51d95a41",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released open-source audit checklist for framework-agnostic AI agents, with no indication of duplication or outdated information."
+    },
+    "1522": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:44:01Z",
+      "duplicate_of": null,
+      "hash": "21c0a8e3431f921c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a newly released local-first safety tool for AI agent shell commands, with no indication of duplication or outdated information."
+    },
+    "1523": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:43:59Z",
+      "duplicate_of": null,
+      "hash": "86aa93ab63892835",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces the open-source release of Batta, a novel plan-stage security review tool for AI agents, with no indication of prior coverage or outdated information."
+    },
+    "1524": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:43:30Z",
+      "duplicate_of": null,
+      "hash": "78d013de8263b00f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of a new binary protocol Lumen for MCP, presenting current technical details and GitHub repo, no indication of duplication or outdated info."
+    },
+    "1527": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:43:28Z",
+      "duplicate_of": null,
+      "hash": "05244e067f13bc9c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue shares a recent (2025-10-26) blog post about AI engineering discipline; it presents current perspectives and is not a duplicate or outdated framing."
+    },
+    "1535": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:43:23Z",
+      "duplicate_of": null,
+      "hash": "1ce319c513f99561",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces Vercel Eve's public beta release on 2026-06-16, which is recent and not duplicate of any other known issue."
+    },
+    "1536": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:43:21Z",
+      "duplicate_of": null,
+      "hash": "caa974ac620bba76",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent blog post from June 13, 2026 proposing a novel Lyapunov stability-based methodology for agentic loops, presenting it as current work without indicating outdated informatio"
+    },
+    "1539": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:43:18Z",
+      "duplicate_of": null,
+      "hash": "2185623d728e4380",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue describes a recent public beta release of Greptile's TREX AI code reviewer, which is current and not duplicate of any known open issue."
+    },
+    "1546": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:43:11Z",
+      "duplicate_of": null,
+      "hash": "e04ead9a4040f754",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of a new open-source AI CAD platform launch, describing current features and release."
+    },
+    "1551": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:42:59Z",
+      "duplicate_of": null,
+      "hash": "99a8588a49fbd291",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent, specific experiment conducted by OpenRouter's Dev Rel Lead with up-to-date model versions and results, not matching any prior issue."
+    },
+    "1554": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:42:49Z",
+      "duplicate_of": null,
+      "hash": "b95fb3ac75d05c69",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a new Cloudflare Workers-based self-hosted AI agent (Moltworker) released in 2024, describing current features and benefits; no indication of duplication or outdated information."
+    },
+    "1555": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:42:47Z",
+      "duplicate_of": null,
+      "hash": "87661fffbd7d2c36",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces the June 2026 ENPIRE harness release by Nvidia GEAR lab with CMU and UC Berkeley, describing recent multi-agent AI coding results."
+    },
+    "1556": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:42:43Z",
+      "duplicate_of": null,
+      "hash": "c4fd9ece1c91fb98",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent case study of Ångstrom using Claude Code to reproduce Meta's UMA-OMC model within 4 weeks, presenting current information without indicating old-generation content or dupl"
+    },
+    "1557": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:42:40Z",
+      "duplicate_of": null,
+      "hash": "568d99134a5b2933",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent migration procedure from Claude to DeepSeek-V3 published by Firetiger, which is current and not a duplicate or outdated claim."
+    },
+    "1560": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:42:35Z",
+      "duplicate_of": null,
+      "hash": "e24788efdb944425",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces the recent release of Lightpanda Agent and PandaScript, describing a novel agent-first headless browser integration with LLM, with no indication of duplication or outdated information."
+    },
+    "1563": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:42:22Z",
+      "duplicate_of": null,
+      "hash": "d300f20d17b2159d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Hacker News post about a developer's 17 AI-integrated tools, presenting current, non-duplicate content."
+    },
+    "1564": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:42:19Z",
+      "duplicate_of": null,
+      "hash": "dcfb3032238b6204",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent tool (Gloat) for compiling Clojure/YAMLScript to Go native binaries, presenting current information without duplication or outdated claims."
+    },
+    "1573": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:42:17Z",
+      "duplicate_of": null,
+      "hash": "1ea293481c4bd8f3",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports the newly released FOSDEM 2026 schedule with specific session counts and topics; no evidence of a duplicate issue about the same announcement."
+    },
+    "1577": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:41:45Z",
+      "duplicate_of": null,
+      "hash": "b336cce134ecec1d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent product release (Orion 2) with current details and references YC W26, indicating up-to-date information."
+    },
+    "1581": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:41:42Z",
+      "duplicate_of": null,
+      "hash": "ebc3c57093a4edf3",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Elasticsearch announcement about a cognitive-science-based permanent agent memory layer, which is current and not duplicate or stale."
+    },
+    "1585": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:41:40Z",
+      "duplicate_of": null,
+      "hash": "cae07f20213ce329",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a new embedded vector+graph hybrid database BlitzGraph for LLM agents, describing its features and relevance."
+    },
+    "1586": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:41:25Z",
+      "duplicate_of": null,
+      "hash": "d1edbfc0c3c9f35f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue proposes concrete updates to WebGenie Agent Context SOT v2 regarding payload schema, citation enforcement, confidence signals, and cross-repo tracing; no indication of duplication or outdated fr"
+    },
+    "1592": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:41:23Z",
+      "duplicate_of": null,
+      "hash": "f6e028e84bb7cf2d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released open-source AuthPlane OAuth 2.1 + PKCE authentication server for MCP, showing no signs of being outdated or duplicated."
+    },
+    "1593": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:41:19Z",
+      "duplicate_of": null,
+      "hash": "1ba3fd586d11adb4",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent Go agent toolkit release with no indication of duplication or outdated information."
+    },
+    "1594": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:41:11Z",
+      "duplicate_of": null,
+      "hash": "82dd9c3fcbfdfba8",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a current multi-agent research CLI tool with specific features and deployment forms, no indication of outdated information."
+    },
+    "1596": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:40:53Z",
+      "duplicate_of": null,
+      "hash": "94b15e0bddf9ca2e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a newly announced DeepMind AI Control Roadmap with specific details and a reference link, indicating current information."
+    },
+    "1598": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:39:59Z",
+      "duplicate_of": null,
+      "hash": "0fc6ee0b2029f328",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of ACE spec on June 15, 2026 is recent and specific; no evidence of duplication or outdated framing."
+    },
+    "1601": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:39:53Z",
+      "duplicate_of": null,
+      "hash": "5deac8f954a8c254",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces the ARD specification as a new standard for agentic resource discovery, with no indication of duplication or outdated information."
+    },
+    "1602": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.9,
+      "decided_at": "2026-06-22T00:39:43Z",
+      "duplicate_of": null,
+      "hash": "86e4808191c0b77a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces Mira, a newly released self-hosted AI code reviewer with specific features; no evidence of prior identical announcement in the repository."
+    },
+    "1604": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:39:30Z",
+      "duplicate_of": null,
+      "hash": "f57e7183e7225ebd",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent June 18, 2026 Anthropic announcement about Artifacts in Claude Code, which is current and not duplicate of any known open issue."
+    },
+    "1605": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:39:27Z",
+      "duplicate_of": null,
+      "hash": "e3edbc6ba69da49a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue shares a recent June 17, 2026 Browserless blog post about production AI agent lessons, which is current and not duplicate of any known open issue."
+    },
+    "1609": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:39:20Z",
+      "duplicate_of": null,
+      "hash": "afb1bcf1d52b997e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a recent stable release of MCP's Enterprise-Managed Authorization extension on 2026-06-18, which is current and not duplicate or outdated."
+    },
+    "1632": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:39:05Z",
+      "duplicate_of": null,
+      "hash": "647dba0b61b716ff",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces mistral.rs v0.8.10 release with new OpenAI-compatible Skills and files endpoints, a current development not previously reported."
+    },
+    "1633": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:39:02Z",
+      "duplicate_of": null,
+      "hash": "b8fbd1b3c4871130",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent guide about Claude Code skill setups; no indication it duplicates another open issue or presents outdated information as current."
+    },
+    "1634": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:39:00Z",
+      "duplicate_of": null,
+      "hash": "eaf7d3f7999f6ead",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces Cloudflare's June 19, 2026 launch of temporary accounts for AI agents, which is current and not duplicate of any known open issue."
+    },
+    "1635": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:38:56Z",
+      "duplicate_of": null,
+      "hash": "24594115e5dbabad",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a newly released open-source control plane for multiple AI coding agents, describing current features and launch details."
+    },
+    "1636": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:38:53Z",
+      "duplicate_of": null,
+      "hash": "22a89eb6cb0dcd8d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent essay published on 2026-06-15 about AI research perseverance, presenting current information without framing outdated content as new, and there is no indication of duplica"
+    },
+    "1637": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:38:43Z",
+      "duplicate_of": null,
+      "hash": "47406b4e6b1c9bf0",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent Zep blog post about building LLM agents in Go without frameworks, presenting current patterns and techniques; it is not outdated nor a duplicate of any known open issue."
+    },
+    "1638": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:38:40Z",
+      "duplicate_of": null,
+      "hash": "2742a2a7f31d0339",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released open-source multiplayer debugging agent with full-stack tracing and AI collaboration, representing a current development."
+    },
+    "1639": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:38:27Z",
+      "duplicate_of": null,
+      "hash": "1ca8c056666b87b0",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent event (Amazon dropping Sam Altman biopic rights after announcing OpenAI partnership) that is current and not duplicate of any known open issue."
+    },
+    "1640": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:37:33Z",
+      "duplicate_of": null,
+      "hash": "12bf790389d55a65",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Reports a recent Norway policy (June 19, 2026) restricting AI use in elementary schools; no indication it duplicates another open issue."
+    },
+    "1641": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:37:28Z",
+      "duplicate_of": null,
+      "hash": "2062d3267f362e46",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses recent corporate pullback from AI due to cost concerns, citing a Financial Times article and current ROI reassessments, which reflects up-to-date industry trends as of mid-2026."
+    },
+    "1642": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:37:25Z",
+      "duplicate_of": null,
+      "hash": "202d614c6f90272c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports John Jumper's June 2026 move to Anthropic, a recent event not seen elsewhere in the provided context."
+    },
+    "1643": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.85,
+      "decided_at": "2026-06-22T00:37:21Z",
+      "duplicate_of": null,
+      "hash": "66390b2ed57c1c23",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent Amazon-OpenAI partnership and halt of Sam Altman biopic, which appears to be a unique news event not obviously duplicated by other open issues."
+    },
+    "1644": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:37:19Z",
+      "duplicate_of": null,
+      "hash": "79013815db6b1334",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue proposes a current security workflow for AI agents, not outdated or duplicate of any known issue."
+    },
+    "1645": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:37:10Z",
+      "duplicate_of": null,
+      "hash": "52f0cdb39d5bffa3",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes current 2026 trends in business AI agents without referencing outdated information or matching any other open issue."
+    },
+    "1646": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:37:00Z",
+      "duplicate_of": null,
+      "hash": "a5ba1a99a19523d4",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes current AI agent workflows for product managers with up-to-date tools and no indication of outdated information."
+    },
+    "1647": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:36:58Z",
+      "duplicate_of": null,
+      "hash": "00e0284e04c74d44",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a new Android AI agent project with full agent mode, which is current and not a duplicate of any other open issue."
+    },
+    "1648": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:56Z",
+      "duplicate_of": null,
+      "hash": "26b2f25b554ed6bc",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Reports a recent (June 16, 2026) pricing pause for Claude Agent SDK, not outdated or duplicate."
+    },
+    "1649": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:36:53Z",
+      "duplicate_of": null,
+      "hash": "1a87248c8dba0a54",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent essay by Lars Fay covered by Cal Newport, presenting current critique of AI-assisted coding; no evidence of duplication or outdated framing."
+    },
+    "1650": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:51Z",
+      "duplicate_of": null,
+      "hash": "bc916efa6ec55fa4",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue announces a newly released benchmark (RewardHackBench) with recent results; no indication it duplicates another open issue or presents outdated information as current."
+    },
+    "1651": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:36:49Z",
+      "duplicate_of": null,
+      "hash": "d21f7f2bb8f40c66",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue describes a newly announced free coding agent CLI using current models (DeepSeek v4 Pro, Kimi K2.6, MiniMax M2.7) with no indication of duplication or outdated information."
+    },
+    "1652": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:45Z",
+      "duplicate_of": null,
+      "hash": "bf9cf956a6625993",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent benchmark (2026-06-19) comparing MiniMax M3 and GLM 5.2 in autonomous coding tasks, providing current, non-duplicate information."
+    },
+    "1653": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:41Z",
+      "duplicate_of": null,
+      "hash": "cf0e555d0998f68c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announcement of Aikido's new Code Audit feature released in June 2026 is current and not a duplicate of any known open issue."
+    },
+    "1655": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:38Z",
+      "duplicate_of": null,
+      "hash": "30c273eb6a98e66b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent arXiv paper (2606.00914) posted in June 2026, presenting novel findings about adversarial feeds influencing LLM agent decisions, with no indication of duplication or outda"
+    },
+    "1656": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:36:32Z",
+      "duplicate_of": null,
+      "hash": "a13d993f2c7b05ee",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent analysis of Gemini 3's hedge behavior, describing new findings without indicating outdated information or duplication of another open issue."
+    },
+    "1657": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:36:28Z",
+      "duplicate_of": null,
+      "hash": "072f77d13c9be85c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a novel cross-verification pipeline using Claude Code and Codex for codebase analysis, presented as a recent case study from unsiloed.ai."
+    },
+    "1658": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:24Z",
+      "duplicate_of": null,
+      "hash": "deb75bf155571acc",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a newly released local AI agent Wolffish v1.0.173 with current details, not framing outdated info as current."
+    },
+    "1659": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:18Z",
+      "duplicate_of": null,
+      "hash": "7e4ffd1ba260c798",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a newly released project with recent commits and current tech stack as of June 2026, presenting genuine, up-to-date information."
+    },
+    "1660": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:36:16Z",
+      "duplicate_of": null,
+      "hash": "7db2f504210518f2",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a newly announced tool AI Commander enabling AI agents to remotely control machines via outbound connections, which is a current development and not a duplicate of any known prior "
+    },
+    "1662": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:36:12Z",
+      "duplicate_of": null,
+      "hash": "83940dd069a5e471",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent DeepMind security roadmap based on internal analysis of 1M coding agent tasks, presenting it as new information without indicating outdated claims."
+    },
+    "1664": {
+      "action_taken": "closed",
+      "classification": "stale",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:36:06Z",
+      "duplicate_of": null,
+      "hash": "8afeaf762c420796",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The body presents SpaceX as a publicly traded company post-IPO with a $1.77T valuation and discusses stock price movements, which is false as SpaceX remains private; this misrepresents current facts a"
+    },
+    "1675": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:36:00Z",
+      "duplicate_of": null,
+      "hash": "654dfd31d455cec3",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a recent arXiv preprint (2026-06) proposing LedgerAgent for structured state management in policy-compliant tool-calling agents, which is novel and not duplicate or stale."
+    },
+    "1676": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:35:57Z",
+      "duplicate_of": null,
+      "hash": "540dcb54683b0a18",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue introduces a recent arXiv preprint (2026-06) about MemoryWAM, a novel persistent memory world action model, which is current and not duplicate of any known open issue."
+    },
+    "1677": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:55Z",
+      "duplicate_of": null,
+      "hash": "90a82e05b599e73e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Announces a new library release in June 2026 with current details; no indication of duplication or outdated info."
+    },
+    "1678": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:35:49Z",
+      "duplicate_of": null,
+      "hash": "a281772a3aea6c13",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a newly announced Autonomy framework with self-directed agent loops, beam search, and action gateway; no indication it duplicates another open issue or presents outdated info as cu"
+    },
+    "1680": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:35:44Z",
+      "duplicate_of": null,
+      "hash": "5b9fdbd69a9fde46",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a recent open-source project (EdgeK-BEAST) introducing a governed execution middleware for coding agents, presenting current technical details and links."
+    },
+    "1681": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:39Z",
+      "duplicate_of": null,
+      "hash": "0793365546f40e0c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent self-hosted LLM router tool (Wyolet Relay) with current links and no indication of duplication or outdated information."
+    },
+    "1682": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:37Z",
+      "duplicate_of": null,
+      "hash": "6a2c7a3eae6e07d8",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces AgentArk, a newly released self-hosted AI operating system, with no indication of being outdated or duplicate of another open issue."
+    },
+    "1683": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.85,
+      "decided_at": "2026-06-22T00:35:23Z",
+      "duplicate_of": null,
+      "hash": "c4aa06348ee5e304",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent claim about GLM-5.2 surpassing Opus 4.8 on SWE-Bench/MultiPL-E and the release of offmute-v2, which appears to be a novel development not obviously duplicated by other open "
+    },
+    "1684": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:20Z",
+      "duplicate_of": null,
+      "hash": "ef1a008aeef8dc9f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a newly disclosed RCE vector (AutoJack) from Microsoft Defender dated 2026-06-18, distinct from prior Agentjacking issue, and presents current information."
+    },
+    "1685": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:35:17Z",
+      "duplicate_of": null,
+      "hash": "9c176b5dc15b02d0",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a novel probe-and-refine tuning technique with recent experimental results, not a duplicate or outdated information."
+    },
+    "1686": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:35:15Z",
+      "duplicate_of": null,
+      "hash": "9c84621b94a5627b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a recent LLM-driven E2E test framework with current features and no indication of outdated information."
+    },
+    "1687": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:12Z",
+      "duplicate_of": null,
+      "hash": "7e1af91fe987c0e0",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Introduces a new local search index tool for AI coding agent histories, describing current features and no indication of duplication or outdated information."
+    },
+    "1688": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:08Z",
+      "duplicate_of": null,
+      "hash": "7253f7dcb7d356d9",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a new tool (real-agent-setup) for upgrading coding agents with context awareness, self-improvement, and security; it is not a duplicate of any known issue and does not present out"
+    },
+    "1689": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:06Z",
+      "duplicate_of": null,
+      "hash": "389856b8706b938d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces a recent arXiv paper proposing a novel certificate-bound authority architecture for multi-agent systems, representing a current research trend."
+    },
+    "1690": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:04Z",
+      "duplicate_of": null,
+      "hash": "631c998400f8cfad",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent arXiv paper (2026-06) presenting novel S-Agent framework for spatial reasoning via tool use, with no indication of duplication or outdated content."
+    },
+    "1692": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:35:00Z",
+      "duplicate_of": null,
+      "hash": "2dc9e56ac976531f",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent arXiv paper from June 2026 on probabilistic verification for AI agents, which is current and not duplicate or stale."
+    },
+    "1704": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:34:44Z",
+      "duplicate_of": null,
+      "hash": "270fc5e1d25143ef",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent phenomenon observed in LLM outputs based on a Substack article published 2026-06-21, presenting current analysis without referencing outdated information."
+    },
+    "1705": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:34:40Z",
+      "duplicate_of": null,
+      "hash": "13821f79b7cf5b8a",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent case study of Bayer's PRINCE agent AI system via a Martin Fowler article, describing current practices and not duplicating any known existing issue."
+    },
+    "1706": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:34:38Z",
+      "duplicate_of": null,
+      "hash": "d589d4e9790b360e",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent apology and commitment by Anthropic regarding invisible guardrails on Claude Fable 5, which appears to be new information not matching any known existing issue."
+    },
+    "1707": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:34:27Z",
+      "duplicate_of": null,
+      "hash": "6eb0177b9f1e5be8",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Reports a recent policy change regarding AWS Bedrock data retention for Anthropic's Mythos-level models, not outdated or duplicate."
+    },
+    "1708": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:34:22Z",
+      "duplicate_of": null,
+      "hash": "16a127d14336238d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent 2026-06-18 announcement about Anthropic's Project Fetch Phase Two with Claude Opus 4.7, describing new results not previously covered."
+    },
+    "1709": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:34:18Z",
+      "duplicate_of": null,
+      "hash": "ea6e6cbe247a2c24",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent deployment note about running Qwen3 80B and 4B models on a DGX Spark with vLLM, sharing practical lessons; it is not a duplicate of any known issue and does not contain out"
+    },
+    "1710": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T00:34:15Z",
+      "duplicate_of": null,
+      "hash": "82dab23da689d88d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent Anthropic announcement about identity verification for Claude via Persona Identities, which appears to be current and not a duplicate of any known prior issue."
+    },
+    "1711": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T00:34:14Z",
+      "duplicate_of": null,
+      "hash": "90b2688466a03ad8",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue introduces Pulse, a new local dashboard for Claude Code with mobile approval and cost tracking, describing current features without referencing outdated information or duplicating another op"
+    },
+    "1712": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:34:11Z",
+      "duplicate_of": null,
+      "hash": "851cc0fc8e41bb3d",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent Trump interview and policy shift regarding Anthropic's export controls, which appears to be a current news event not matching any known prior issue."
+    },
+    "1713": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:34:06Z",
+      "duplicate_of": null,
+      "hash": "602982dac08913c1",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent ServeTheHome article (referencing June 3, 2026 Cloudflare statement) proposing a dense CPU rack for agentic AI, presenting current analysis without outdated claims."
+    },
+    "1714": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T00:33:57Z",
+      "duplicate_of": null,
+      "hash": "4eeb169e61deeb61",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent, specific workflow using DeepSeek V4 Flash and GMI Cloud, presenting novel cost/performance data; no indication it repeats prior content or references outdated info."
+    },
+    "1715": {
+      "action_taken": "labeled-low-conf",
+      "classification": "stale",
+      "confidence": 0.88,
+      "decided_at": "2026-06-22T00:33:44Z",
+      "duplicate_of": null,
+      "hash": "877909c34c72596c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The claim presents Mythos as a current frontier AI model capable of hacking US government systems in hours, but given the timeline (2026) and lack of corroborating evidence, it likely frames speculati"
+    },
+    "1716": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T00:33:39Z",
+      "duplicate_of": null,
+      "hash": "ed07d60a8511737c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent, specific release of the Apertus multilingual LLM in September 2025 with detailed technical and compliance information, not matching any prior known issue."
+    },
+    "619": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T01:04:57Z",
+      "duplicate_of": null,
+      "hash": "66e75fb7b0b70ffe",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a current research overview on RAG geometry and effective dimensionality with recent embedding models and techniques, suitable for a trend report."
+    },
+    "959": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T01:04:41Z",
+      "duplicate_of": null,
+      "hash": "88446162f2f929f0",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent release of Stanford CS336 AI agent design guidelines, which is current and not duplicate of any known open issue."
+    },
+    "977": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T01:04:36Z",
+      "duplicate_of": null,
+      "hash": "42709640be6a3dd1",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Introduces a new tool for managing AI coding agent skills and MCP servers, appears current and not duplicate."
+    },
+    "978": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.95,
+      "decided_at": "2026-06-22T01:04:33Z",
+      "duplicate_of": null,
+      "hash": "c7e1a5d7eee589b1",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Issue introduces a new interactive markdown tool (MDMA) with no indication of duplication or outdated information."
     }
   },
-  "last_run": "2026-06-21T23:53:09Z",
+  "last_run": "2026-06-22T01:04:57Z",
   "schema_version": 1
 }
