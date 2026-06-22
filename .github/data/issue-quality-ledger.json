@@ -2321,6 +2321,16 @@
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
       "reason": "The issue describes a recent, specific release of the Apertus multilingual LLM in September 2025 with detailed technical and compliance information, not matching any prior known issue."
     },
+    "1717": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T01:10:27Z",
+      "duplicate_of": null,
+      "hash": "7d8030363aa9bdb8",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Describes a new offline, token-free memory plugin for Claude Code, representing a current AI tooling trend."
+    },
     "619": {
       "action_taken": null,
       "classification": "ok",
@@ -2362,6 +2372,6 @@
       "reason": "Issue introduces a new interactive markdown tool (MDMA) with no indication of duplication or outdated information."
     }
   },
-  "last_run": "2026-06-22T01:04:57Z",
+  "last_run": "2026-06-22T01:10:27Z",
   "schema_version": 1
 }
