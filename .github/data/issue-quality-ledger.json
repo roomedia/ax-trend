@@ -2331,6 +2331,46 @@
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
       "reason": "Describes a new offline, token-free memory plugin for Claude Code, representing a current AI tooling trend."
     },
+    "1718": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T04:13:09Z",
+      "duplicate_of": null,
+      "hash": "c7df8f66232c4281",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue reports a recent internal Meta employee petition against the Model Capability Initiative concerning employee computer usage data for AI training, with references to events up to March 2026, "
+    },
+    "1719": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T04:13:03Z",
+      "duplicate_of": null,
+      "hash": "cda5b36260c81d76",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a newly published essay from June 21, 2026, presenting current analysis and not repeating prior content."
+    },
+    "1720": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T04:12:56Z",
+      "duplicate_of": null,
+      "hash": "5e3fa15f6639db0b",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue discusses a recent HN essay analyzing current LLM industry phases and pricing trends up to 2025-present, presenting timely, non-duplicate content relevant to AX trend tracking."
+    },
+    "1721": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.92,
+      "decided_at": "2026-06-22T04:12:52Z",
+      "duplicate_of": null,
+      "hash": "b50fdb0d1962ad4c",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue describes a recent (June 2025) practical fine-tuning case using Qwen 3 0.6B and Unsloth for query categorization, presenting current techniques and no indication of outdated information."
+    },
     "619": {
       "action_taken": null,
       "classification": "ok",
@@ -2372,6 +2412,6 @@
       "reason": "Issue introduces a new interactive markdown tool (MDMA) with no indication of duplication or outdated information."
     }
   },
-  "last_run": "2026-06-22T01:10:27Z",
+  "last_run": "2026-06-22T04:13:09Z",
   "schema_version": 1
 }
