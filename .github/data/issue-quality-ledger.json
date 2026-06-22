@@ -2371,6 +2371,26 @@
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
       "reason": "The issue describes a recent (June 2025) practical fine-tuning case using Qwen 3 0.6B and Unsloth for query categorization, presenting current techniques and no indication of outdated information."
     },
+    "1722": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.96,
+      "decided_at": "2026-06-22T08:14:20Z",
+      "duplicate_of": null,
+      "hash": "450520ef6d623984",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "Reports a specific, recent bug in Codex CLI SQLite feedback log causing excessive SSD writes; no indication it duplicates another open issue in this repository."
+    },
+    "1723": {
+      "action_taken": null,
+      "classification": "ok",
+      "confidence": 0.93,
+      "decided_at": "2026-06-22T08:14:07Z",
+      "duplicate_of": null,
+      "hash": "26476982681ddf81",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "reason": "The issue presents a recent rebuttal to the SkillsBench paper by Anson Biggs, discussing current findings and implications for AX, with no indication of duplication or outdated framing."
+    },
     "619": {
       "action_taken": null,
       "classification": "ok",
@@ -2412,6 +2432,6 @@
       "reason": "Issue introduces a new interactive markdown tool (MDMA) with no indication of duplication or outdated information."
     }
   },
-  "last_run": "2026-06-22T04:13:09Z",
+  "last_run": "2026-06-22T08:14:20Z",
   "schema_version": 1
 }
