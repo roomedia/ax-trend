@@ -5,7 +5,7 @@
 
 ## 0. 준비
 
-- `config.yaml` 읽기: `repo`, `timezone`, `reader`, `thresholds`, `lanes`, `freshness_hours`.
+- `config.yaml` 읽기: `repo`, `timezone`, `reader`, `sources`, `thresholds`, `lanes`, `freshness_hours`.
 - `prompts/`의 세 프롬프트를 읽는다: `selection-score.md`, `event-clustering.md`, `issue-format.md`.
 - GitHub 인증 확인: `gh auth status`. `repo` 스코프 필요.
 - **GitHub 작업은 `gh` CLI만 사용한다.** MCP·웹 UI 경로는 쓰지 않는다.
@@ -14,7 +14,10 @@
 
 1. `config.yaml`의 `topics`를 기준으로 최근 `window_hours` 내 뉴스를 웹 검색한다.
    주제 예: 인기 스킬/플러그인, AI 업계 소식, 새로운 패러다임, 모델 릴리스, AI 코딩·에이전트 도구, 온디바이스 AI, 한국 AI 업계.
-2. GitHub 트렌딩도 스캔한다 (일간·주간): AI/에이전트/모델/코딩 도구 관련 레포 중
+2. **소셜 게시물도 출처에 포함한다.** X·Threads 공개 게시물은 라이브 브라우저로 로그인 없이 읽을 수 있다 (2026-10-11 검증).
+   공식 계정의 론칭·발표·출시·주요 업데이트 게시물은 T1.5 등급 소스로 취급한다. 단순 리포스트·인용은 제외하고 원 게시물만 본다.
+   게시물의 작성 시각을 신선도 기준일로 사용한다.
+3. GitHub 트렌딩도 스캔한다 (일간·주간): AI/에이전트/모델/코딩 도구 관련 레포 중
    최근 30일 생성·급성장 또는 주간 상위 진입작. 단순 튜토리얼·포트폴리오·리스트 모음은 제외.
 3. 제외: `config.yaml`의 `exclude` (기본: 정치·정부 정책 뉴스), 라운드업·회고·재탕, 보도자료 재배포.
 
