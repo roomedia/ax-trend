@@ -1,0 +1,44 @@
+# config 예시 — 복사해서 config.yaml로 만든 뒤 내 조직에 맞게 수정
+# cp config.example.yaml config.yaml
+
+repo: "myorg/my-digest"          # 이슈를 발행할 레포
+timezone: "Asia/Seoul"           # 신선도 판단 기준 시간대
+window_hours: 4                 # 수집 윈도우 (크론 간격보다 약간 크게)
+freshness_hours: 48             # 원문 게시일 허용 범위 (초과 시 발행 금지)
+
+# 독자 정의 — selection-score.md의 reson 축과 issue-format.md의 관점에 반영
+reader:
+  profile: "한국 Android 개발자 + AX TF 리드"
+  interests:
+    - "최근 인기 있는 스킬/플러그인"
+    - "AI 업계 소식"
+    - "새로운 패러다임"
+    - "모델 릴리스"
+    - "AI 코딩/에이전트 도구"
+    - "온디바이스 AI"
+    - "한국 AI 업계 소식"
+
+# 수집에서 제외할 주제
+exclude:
+  - "정치·정부 정책 뉴스 (국감, 국무회의, 정치인 발언 등)"
+
+# 소스 등급별 선별 임계값 (독립 2회 채점 합이 2×임계값 이상이어야 통과)
+thresholds:
+  T1: 60    # 공식 1차: 공식 블로그·GitHub 레포·프레스룸·공식 계정
+  T1_5: 65  # 준공식: 검증된 공식 계정의 개인·조직
+  T2: 76    # 미디어·개인 블로그·보도자료 재배포·SNS 게시물
+
+# 멀티 에이전트 운영 시 담당 주제 분담 (동시에 도는 에이전트는 서로 다른 레인)
+lanes:
+  - id: "models"
+    topics: ["모델 릴리스", "연구·논문"]
+  - id: "tools"
+    topics: ["AI 코딩 도구", "스킬·플러그인", "GitHub 트렌딩"]
+  - id: "industry"
+    topics: ["AI 업계 소식", "한국 AI 업계", "새로운 패러다임"]
+
+# 이슈 발행 정책
+issues:
+  labels: []            # 기본: 라벨 없음 (원하면 추가)
+  language: "ko"        # 이슈 제목·본문 언어
+  body_words: "300-450" # 본문 목표 분량
