@@ -36,6 +36,10 @@ sources:
   - kind: "social_repost"      # 일반 계정의 리포스트·인용·개인 의견
     tier: "T2"
 
+# 우선 탐색할 소셜 계정 (예시 — 내 조직의 관심 계정으로 교체)
+follow_accounts:
+  - "@ClaudeDevs"   # Claude Code·Agent Skills 발표·릴리스 (T1.5 등급)
+
 # 소스 등급별 선별 임계값 (독립 2회 채점 합이 2×임계값 이상이어야 통과)
 thresholds:
   T1: 60    # 공식 1차: 공식 블로그·GitHub 레포·프레스룸·공식 계정
