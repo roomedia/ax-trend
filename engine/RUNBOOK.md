@@ -64,8 +64,21 @@
    <!-- ax-events: 토큰1,토큰2,한글토큰 -->
    ```
    토큰 규칙: 소문자 영문 + 한글 원형, 공백·특수문자 제거, 엔터티당 1토큰.
-3. `gh issue create --repo <repo> --title "..." --body-file ...` 로 생성. `--label`은 붙이지 않는다 (운영 정책에 따름).
-4. 생성 직후 URL을 기록한다.
+5. **제목·본문을 파일로 쓰고 `scripts/create-issue.sh`로만 발행한다.**
+   ```bash
+   mkdir -p .tmp
+   cat > .tmp/title.txt <<'TITLE'
+   Brave, Search API에 x402 에이전트 결제 도입 — 건당 $0.005에 검색을 산다 (11/12, Brave 공식)
+   TITLE
+   cat > .tmp/body.md <<'BODY'
+   (issue-format.md 형식 본문 + 맨 끝 핑거프린트 주석)
+   BODY
+   engine/scripts/create-issue.sh <owner/repo> .tmp/title.txt .tmp/body.md
+   ```
+   제목을 `gh issue create --title "..."` 처럼 명령줄에 직접 쓰지 않는다. 인용 안의
+   `$0`·`$2` 같은 문자열이 셸 위치 인자로 확장돼 제목이 깨진다 (LESSONS #12 — #3967, #3968).
+   히어독은 `<<'TITLE'`처럼 인용해 열어야 `$`가 그대로 남는다. `--label`은 붙이지 않는다 (운영 정책에 따름).
+6. 생성 직후 URL을 기록한다.
 
 ## 5. 보고 (report)
 

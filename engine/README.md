@@ -94,7 +94,8 @@ engine/
 │   ├── event-clustering.md    # 이벤트 군집 판정 프롬프트
 │   └── issue-format.md        # 이슈 본문 형식 (300~450단어 다이제스트)
 └── scripts/
-    └── fingerprint.sh         # 최근 open 이슈 핑거프린트 스캔
+    ├── fingerprint.sh         # 최근 open 이슈 핑거프린트 스캔
+    └── create-issue.sh        # $ 안전 발행 (제목·본문을 파일에서 읽어 gh로 전달)
 ```
 
 ## AIHOT과의 관계
